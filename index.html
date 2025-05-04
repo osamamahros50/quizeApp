@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="icon" href="./images/quiz.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./css/all.min.css"/>
+  <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./CSS/style.css"/>
+</head>
+
+<body>
+  <main class="min-vh-100 d-flex flex-column justify-content-center align-items-center overflow-hidden">
+    <div class="heading animate__animated animate__zoomInDown">
+    </div>
+    <div class="container ">
+      <!-- From Uiverse.io by mrhyddenn --> 
+<div class="loader text-center animate__animated animate__backInDown ">
+  <span>System Quize App</span>
+  <span>System Quize App</span>
+</div>
+        <div class="row ">
+            
+            <form
+            class="start-quiz col-lg-8 offset-lg-2 d-flex flex-column gap-3 animate__animated animate__backInUp "
+            id="quizOptions">
+            <h1 class="fw-bold">Quiz App</h1>
+          <div class="form-floating form-field">
+            <select class=" input-field" id="categoryMenu" aria-label="category Select">
+              <option selected value="">Any Category</option>
+              <option value="9">General Knowledge</option>
+              <option value="27">Animals</option>
+              <option value="19">Science: Mathematics</option>
+              <option value="18">Science: Computers</option>
+              <option value="22">Geography</option>
+            </select>
+          </div>
+
+          <div class="form-floating form-field">
+            <select class=" input-field" id="difficultyOptions" aria-label="difficulty Select">
+              <option selected value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <input type="number" class=" input-field" id="questionsNumber" placeholder="Number of Questions" />
+          </div>
+
+          <button type="submit" class="sendMessage-btn" id="startQuiz">
+            Start
+          </button>
+        </form>
+        </div>
+        </div>
+  
+
+    <div class="questions">
+      <div class="container">
+        <div class="row ">
+          
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

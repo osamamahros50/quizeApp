@@ -1,0 +1,200 @@
+main{
+
+    background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
+}
+
+
+.choices {
+    gap: 10px;
+  }
+  
+  .choices li {
+    --main-color: #434371;
+    width: calc((100% - 10px) / 2);
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 100vh;
+    border: 2px solid var(--main-color);
+    color:#64ffda;
+    padding: 5px 12px;
+    transition: background-color 350ms, color 350ms;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .choices li:hover {
+    background-color: var(--main-color);
+    color: #f1f1f1;
+  }
+  
+  .question i {
+    cursor: pointer;
+  }
+.question {
+    background-color: #0a192f;
+
+}
+.question h2 ,.question span{
+    color: #64ffda;
+}
+.correct,
+.correct:hover {
+  --main-color: #7cb518 !important;
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+
+.wrong,
+.wrong:hover {
+  --main-color: #bf0603 !important;
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+form {
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #0a192f;
+    border-radius: 20px;
+    position: relative;
+}
+h1{
+    text-align: center;
+    padding: 10px 0;
+    color: #64ffda !important;
+    font-size: 30px;
+    background-color: transparent !important;
+    align-self: center;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 10px;
+    border: none !important;
+    outline: none !important;
+    color: white;
+    background-color: #171717 !important;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5) !important;
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+  }
+  .input-field:focus{
+      box-shadow: none;
+    }
+    
+    .sendMessage-btn ,.again{
+        cursor: pointer;
+        margin-bottom: 3em;
+        padding:20px 50px;
+        border-radius: 10px;
+        margin: auto;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #64ffda;
+        font-weight: bold;
+        outline: 1px solid #64ffda;
+        transition: all ease-in-out 0.3s;
+        width: fit-content;
+    }
+  
+    .sendMessage-btn:hover,.again:hover {
+        transition: all ease-in-out 0.3s;
+        background-color: #64ffda;
+        color: #000;
+        cursor: pointer;
+        box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    }
+    
+    
+  
+    form:hover {
+        box-shadow: 0px 0px 20px 5px rgba(100, 255, 218, 0.3);
+        transform: scale(0.98);
+    }
+    
+    
+    
+    select option{
+        background-color: #171717 !important;
+    }
+  
+.loader {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.loader span {
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 38px;
+    letter-spacing: 5px;
+    background-color: #0a192f;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 50%;
+}
+@media screen and  (max-width: 600px) {
+    .loader{
+        
+        margin-bottom: 40px;
+    }
+    .loader span{
+        padding: 10px ;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+  }
+@media screen and (min-width:600px) and (max-width: 900px) {
+    .loader{
+        
+        margin-bottom: 40px;
+    }
+    .loader span{
+        padding: 10px ;
+        font-size: 25px;
+    }
+  }
+  
+  .loader span:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 0.3px rgb(128, 198, 255);
+  }
+  
+  .loader span:nth-child(2) {
+    color: rgb(128, 198, 255);
+    -webkit-text-stroke: 1px rgb(128, 198, 255);
+    animation: uiverse723 3s ease-in-out infinite;
+  }
+  
+  @keyframes uiverse723 {
+    0%, 100% {
+      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+       54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+  
+    50% {
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+       51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+  }
